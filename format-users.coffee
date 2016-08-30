@@ -82,7 +82,7 @@ stats2markdown = (datafile, mdfile, title) ->
 
   out += """## Top 10 users from this list by other metrics:
 
-* **Followers:** #{top stats, 'followers', 'thousands'}
+* **Followers:** #{top stats, 'followers'}
 * **Organisations:** #{top stats, 'organizations', 'list'}
   """
 
