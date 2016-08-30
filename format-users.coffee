@@ -32,7 +32,7 @@ top = (stats, field, type) ->
 stats2markdown = (datafile, mdfile, title) ->
   stats = require(datafile)
   minFollowers = stats.map((_) -> _.followers).reduce(minimum, 1000)
-  maxNumber = 256
+  maxNumber = 1000
 
   today = new Date()
   from = new Date()
