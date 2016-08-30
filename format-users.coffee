@@ -39,7 +39,7 @@ stats2markdown = (datafile, mdfile, title) ->
   from.setYear today.getFullYear() - 1
 
   out = """
-  # Most active GitHub users ([git.io/top](http://git.io/top))
+  # Most active GitHub users from Hungary
 
   The count of contributions (summary of Pull Requests, opened issues and commits) to public repos at GitHub.com from **#{from.toGMTString()}** till **#{today.toGMTString()}**.
 
@@ -53,7 +53,7 @@ stats2markdown = (datafile, mdfile, title) ->
     .slice(0, #{maxNumber})
   ```
 
-  Made with data mining of GitHub.com ([raw data](https://gist.github.com/4524946), [script](https://github.com/paulmillr/top-github-users)) by [@paulmillr](https://github.com/paulmillr) with contribs of [@lifesinger](https://github.com/lifesinger) and [@ahmetalpbalkan](https://github.com/ahmetalpbalkan). Updated once per week.
+  Made with data mining of GitHub.com, [script](https://github.com/tyrael/top-github-users)) by [@tyrael](https://github.com/tyrael), forked from [@paulmillr](https://github.com/paulmillr) with contribs of [@lifesinger](https://github.com/lifesinger) and [@ahmetalpbalkan](https://github.com/ahmetalpbalkan). Updated once per week.
 
   <table cellspacing="0"><thead>
   <th scope="col">#</th>
